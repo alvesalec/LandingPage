@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mude!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./imagens/borboleta.png">
+</head>
+<body>
+<header>
+  <img id="borboleta" src="./imagens/borboleta.png">
+  <p id="boasVindas">Boas vindas, desenvolvedor!</p>
+</header>
+<div id="container">
+  <div id="top">
+    <h5>O que gostaria de fazer?</h5>
+  </div>
+  <form id = "form" action="operacoes-desativar" method='post'>
+    <label value="usuarioDesativar">Digite o identificador do usuário que deseja desativar:</label>
+    <br>
+    <input type="text" id="desativando" name="usuarioDesativar"><br><br>
+    <br>
+    <button id='botao' type='submit'>Desativar</button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mude!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/borboleta.png">
+</head>
+<body>
+<header>
+    <img id="borboleta" src="./imagens/borboleta.png">
+    <p id="boasVindas">Boas vindas, desenvolvedor!</p>
+</header>
+<div id="card1">
+    <div id="container">
+        <div id="top">
+            <h5>Inserir</h5>
+        </div>
+        <div id="formulario">
+            <form id='form' action="operacao-buscar-post-por-id" method="post">
+                <p id="escritaTabela">Por qual identificador deseja buscar?</p>
+                <br>
+                <select name="tabelaPost" id="tabela">
+                    <option value="user">Usuário</option>
+                    <option value="post">Post</option>
+                </select>
+                <br>
+                <label value="valorProcurado">Digite o valor que deseja buscar:</label>
+                <br>
+                <input type="text" id="buscando" name="valorProcurado"><br><br>
+                <br>
+                <button id='botao' type='submit'>Buscar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

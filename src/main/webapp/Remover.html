@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mude!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/borboleta.png">
+</head>
+<body>
+<header>
+  <img id="borboleta" src="./imagens/borboleta.png">
+  <p id="boasVindas">Boas vindas, desenvolvedor!</p>
+</header>
+<div id="card1">
+  <div id="container">
+    <div id="top">
+      <h5>Remover</h5>
+    </div>
+    <div id="formulario">
+      <form id='form' action="operacao-remocao" method="post">
+        <p id="escritaTabela">Qual tabela deseja alterar?</p>
+        <br>
+        <select name="tabelaRem" id="tabela">
+          <option value="gen">Genêro</option>
+          <option value="sex">Sexualidade</option>
+          <option value="pron">Pronome</option>
+          <option value="post">Post</option>
+        </select>
+        <br>
+        <p id="escritaCampo">Por qual campo deseja procurar?</p>
+        <br>
+        <select name="campoRem" id="campo">
+          <option value="cdescricao">Descrição</option>
+          <option value="ncd">ID</option>
+        </select>
+        <br>
+        <label value="valorRemovido">Digite o valor que deseja remover:</label>
+        <br>
+        <input type="text" id="valorRemover" name="valorRemovido"><br><br>
+        <br>
+        <button id='botaoRemover' type='submit'>Remover</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
