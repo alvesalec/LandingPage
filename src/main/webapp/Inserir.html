@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mude!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/borboleta.png">
+</head>
+<body>
+<header>
+    <img id="borboleta" src="./imagens/borboleta.png">
+    <p id="boasVindas">Boas vindas, usuário!</p>
+</header>
+<div id="cadastrarTítulo">
+    <h3>Cadastrar</h3>
+</div>
+<div id="containerInserir">
+<form action="InserirUsuario" method="post">
+    <div>
+        <label for="nomeReal">Nome</label>
+        <br>
+        <input required type="text" name="nomeReal" id="nomeReal" placeholder="Nome Comum"/>
+    </div>
+    <div>
+        <label for="username">Username</label>
+        <br>
+        <input required type="text" name="username" id="username" placeholder="nome de usuário :P"/>
+    </div>
+    <div>
+        <label for="telefone">Telefone</label>
+        <br>
+        <input required type="tel" name="telefone" id="telefone" placeholder="(11) 983388984"/>
+    </div>
+    <div>
+        <label for="email">E-mail</label>
+        <br>
+        <input required type="email" name="email" id="email" placeholder="exemplo@gmail.com"/>
+    </div>
+    <div id="formularioPronome">
+            <p id="escritaPronome">Quais são seus pronomes?</p>
+            <br>
+            <select name="escolhaPronome" id="escolha1">
+                <option value="2">ele/dele</option>
+                <option value="1">ela/dela</option>
+                <option value="3">elu/delu</option>
+                <option value="4">ile/dile</option>
+            </select>
+    </div>
+    <br>
+    <div id="formularioSexualidade">
+            <p id="escritaSexualidade">Qual é sua sexualidade?</p>
+            <br>
+            <select name="escolhaSexualidade" id="escolha2">
+                <option value="1">heterossexual</option>
+                <option value="2">gay</option>
+                <option value="11">lésbica</option>
+                <option value="3">bissexual</option>
+                <option value="4">pansexual</option>
+                <option value="5">assexual</option>
+            </select>
+    </div>
+    <br>
+    <div id="formularioGenero">
+            <p id="escritaGenero">Qual é seu genêro?</p>
+            <br>
+            <select name="escolhaGenero" id="escolha3">
+                <option value="2">feminino</option>
+                <option value="1">masculino</option>
+                <option value="3">não binário</option>
+                <option value="4">genêro fluído</option>
+                <option value="14">bigenêro</option>
+                <option value="15">pangenêro</option>
+                <option value="16">agênerp</option>
+            </select>
+    </div>
+    <br>
+    <div>
+        <label for="senha">Senha</label>
+        <br>
+              <input required type="password" name="senha" id="senha"/>
+    </div>
+    <br>
+    <div>
+        <label for="repetirSenha">Repita sua senha</label>
+        <br>
+              <input
+                      required
+                      type="password"
+                      name="repetirSenha"
+                      id="repetirSenha"
+              />
+    </div>
+    <br>
+    <div>
+        <label for="desc">Agora, nos fale um pouco de você!</label>
+        <br>
+        <input type="text" name="desc" id="desc" placeholder="Digite aqui..."/>
+    </div>
+    <br>
+    <input id="botao" type="submit" value="Cadastrar-se"/>
+</form>
+</div>
+</body>
+</html>

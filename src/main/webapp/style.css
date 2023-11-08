@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Pixelify+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+html{
+    background-color: #FD3D6C;
+}
+
+#container{
+    border: 5rem;
+    border-radius: 1rem;
+    width: 30%;
+    height: 60vh;
+    margin-left: 28rem;
+    margin-top: 6rem;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-shadow: 0.5rem 1rem 1rem;
+}
+
+#borboleta{
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+}
+
+header{
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
+
+#botao{
+    text-align: center;
+}
+
+
+#top{
+    font-size: 5vh;
+    background-color: #886196;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#escrita{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-bottom: 8vh;
+}
+th, tr{
+    border-bottom: 0.1rem solid black;
+    padding: 1rem;
+    font-size: 0.5rem;
+    font-family: "Times New Roman", Times, serif;
+    justify-content: center;
+}
+
+
+table{
+    border: 0.1rem solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightpink;
+}
+
+
+#nomeLista{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightpink;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#idTabelas{
+    border-right: 0.1rem solid black;
+}
+
+
+#containerInserir{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 5rem;
+    color: lightpink;
+}
+
+#cadastrarTítulo{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: lightpink;
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+
+#escritaTabela{
+    font-size: 1rem;
+}
