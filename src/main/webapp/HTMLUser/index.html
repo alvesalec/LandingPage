@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mude!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../imagens/borboleta.png">
+</head>
+<body>
+<header>
+    <img id="borboleta" src="../imagens/borboleta.png">
+    <p id="boasVindas">Boas vindas, usuário!</p>
+</header>
+<div id="container">
+    <div id="top">
+        <h5>O que gostaria de fazer?</h5>
+    </div>
+    <br>
+    <form id = "form" action="operacoes-iniciais" method='post'>
+        <br>
+        <select name="escolhaInicial" id="escolha">
+            <option value="cad" >Cadastrar</option>
+            <option value="busc">Buscar Usuário</option>
+        </select>
+        <br>
+        <br>
+        <button id='botao' type='submit'>Enviar</button>
+    </form>
+</div>
+</body>
+</html>

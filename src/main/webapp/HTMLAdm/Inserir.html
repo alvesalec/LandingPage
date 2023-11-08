@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mude!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../../../LandingPage/src/main/webapp/imagens/borboleta.png">
+</head>
+<body>
+<header>
+    <img id="borboleta" src="../../../../LandingPage/src/main/webapp/imagens/borboleta.png">
+    <p id="boasVindas">Boas vindas, desenvolvedor!</p>
+</header>
+<div id="card1">
+    <div id="container">
+        <div id="top">
+            <h5>Inserir</h5>
+        </div>
+        <div id="formulario">
+            <form id='form' action="operacao-insercao" method="post">
+                <p id="escritaTabela">Em qual tabela deseja inserir?</p>
+                <br>
+                <select name="tabelaInserir" id="tabela">
+                    <option value="gen">Genêro</option>
+                    <option value="sex">Sexualidade</option>
+                    <option value="pron">Pronome</option>
+                </select>
+                <br>
+                <label value="valorInserido">Digite o valor que deseja inserir:</label>
+                <br>
+                <input type="text" id="inserindo" name="valorInserido"><br><br>
+                <br>
+                <button id='botao' type='submit'>Inserir</button>
+            </form>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

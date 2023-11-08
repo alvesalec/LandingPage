@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Aleo";
+  src: url("../../Assets/Aleo-Regular.otf") format("truetype");
+}
+
+header {
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  background-color: #fd3d6c;
+  width: 100%;
+  height: 12vh;
+}
+
+.img-header {
+  width: 15vh;
+  height: 15vh;
+  margin-left: 10vh;
+  margin-top: 0vh;
+}
+
+#engrenagem {
+  background-image: url("../../Assets/engrenagem.svg");
+  background-size: cover;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  background-color: #fd3d6c;
+  margin: 2vh 4vh 2vh 1vh;
+  cursor: pointer;
+}
+
+#user {
+  background-image: url("../../Assets/Groupuser.svg");
+  background-size: cover;
+  border: none;
+  width: 2rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  background-color: #fd3d6c;
+  margin: 2.7vh 2vh 2vh 1.5vh;
+  cursor: pointer;
+}
+
+.headerButton {
+  font-family: "Aleo";
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 14%;
+  text-shadow: 0px 3.3636364936828613px 3.3636364936828613px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.headerButton:hover {
+  background-color: #ff6b8f;
+}

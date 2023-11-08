@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mude!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../../../LandingPage/src/main/webapp/imagens/borboleta.png">
+</head>
+<body>
+<header>
+  <img id="borboleta" src="../../../../LandingPage/src/main/webapp/imagens/borboleta.png">
+  <p id="boasVindas">Boas vindas, desenvolvedor!</p>
+</header>
+  <div id="container">
+    <div id="top">
+      <h5>O que gostaria de fazer?</h5>
+    </div>
+    <br>
+    <form id = "form" action="operacoes-iniciais" method='post'>
+      <br>
+      <select name="plataforma" id="plataformaID">
+        <option value="In" >Inserir</option>
+        <option value="Alt">Alterar</option>
+        <option value="BuscEspec">Buscar por valor específico</option>
+        <option value="BuscarTudo">Buscar tudo</option>
+        <option value="Desa">Desativar usuário</option>
+        <option value="Rem">Remover</option>
+      </select>
+      <br>
+      <br>
+      <button id='botao' type='submit'>Enviar</button>
+    </form>
+</div>
+</body>
+</html>
