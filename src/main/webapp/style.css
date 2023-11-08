@@ -68,7 +68,11 @@ header{
 th, tr{
     border-bottom: 0.1rem solid black;
     padding: 1rem;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 1.5rem;
+>>>>>>> da3b7486c7c24a1fb23f5cb50715f4ba3c8fb425
     font-family: "Times New Roman", Times, serif;
     justify-content: center;
 }
@@ -96,6 +100,7 @@ table{
 
 #idTabelas{
     border-right: 0.1rem solid black;
+<<<<<<< HEAD
 }
 
 
@@ -118,4 +123,6 @@ table{
 
 #escritaTabela{
     font-size: 1rem;
+=======
+>>>>>>> da3b7486c7c24a1fb23f5cb50715f4ba3c8fb425
 }

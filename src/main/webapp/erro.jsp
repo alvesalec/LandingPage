@@ -15,7 +15,11 @@
 <body>
 <header>
   <img id="borboleta" src="./imagens/borboleta.png">
+<<<<<<< HEAD
   <p id="boasVindas">Boas vindas, usuário!</p>
+=======
+  <p id="boasVindas">Boas vindas, desenvolvedor!</p>
+>>>>>>> da3b7486c7c24a1fb23f5cb50715f4ba3c8fb425
 </header>
 <div id="card1">
   <div id="container">
