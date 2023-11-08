@@ -1,23 +1,26 @@
-#BUILD
-FROM maven:3.9-amazoncorretto-19 AS BUILD
+# Use an official Tomcat base image
+FROM tomcat:9.0-jdk11-openjdk-slim
 
-COPY . .
+# Create a directory for your application
+RUN mkdir /usr/local/your_web_app
 
-RUN mvn clean package -DskipTests=true #Compilar/Buildar o projeto maven, pulando os testes
+# Copy the pom.xml file to the container (this allows Docker to cache your dependencies)
+COPY pom.xml /usr/local/your_web_app/
 
-#Stage Package
+# Change working directory to your application directory
+WORKDIR /usr/local/your_web_app
 
-FROM openjdk:17-jdk-slim
-#Usando o slim para ficar mais leve, pois o de cima é só para buildar e esse para deixar no ar
+# Copy the entire project to the container
+COPY . /usr/local/your_web_app
 
-COPY --from=BUILD /target/servletMude-1.0-SNAPSHOT.jar ServletAdm.jar
-##O arquivo foi pego do pom.xml, pegando o artifact e a snapshot, colocando um .jar
+# Build the application using Maven
+RUN mvn clean package
 
-#parametros: 1 - maquina, da onde vai vir, no caso, do build que fiz acima
-#parametros: 2 - diretório da origem
+# Copy the WAR file to the webapps directory of Tomcat
+RUN cp target/maven-war-plugin.war /usr/local/tomcat/webapps/
 
-#O artifact é o resultado da compilação
+# Expose the port that the servlet container will listen on
+EXPOSE 8080
 
-EXPOSE 8084
-
-ENTRYPOINT ["java", "-jar", "ServletAdm.jar"]
+# Start Tomcat when the container launches
+CMD ["catalina.sh", "run"]
