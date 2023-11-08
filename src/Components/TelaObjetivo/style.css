@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Fredoka One";
+  src: url("../../Assets/FredokaOne-Regular.ttf") format("truetype");
+  font-family: "Aleo";
+  src: url("../../Assets/Aleo-Regular.otf") format("truetype");
+}
+
+#objetivo {
+  overflow-x: hidden;
+  background-color: #f43acb;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+#titulo {
+  font-family: "Fredoka One";
+  padding: 2rem;
+  color: #ff9839;
+  text-shadow: 0px 4.390028476715088px 4.390028476715088px rgba(0, 0, 0, 0.25);
+  font-size: 6vh;
+}
+
+#textoOb {
+  font-family: "Aleo";
+  color: #ffff;
+  text-shadow: 0px 3.680000066757202px 3.680000066757202px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 4vh;
+  line-height: 1.3em;
+  margin: 15% 0% 0% -190%;
+  width: 600px;
+  height: 225px;
+}
+
+#logo-tt {
+  width: 78vh;
+  max-width: 600%;
+  margin: 95% 0% 0% -500%;
+}
